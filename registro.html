@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registrate al curso | Academia Conquers Blocks</title>
+    <meta name="description" content="" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:alt" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+  <body>
+    <header>
+      <figure>
+        <img
+          width="150px"
+          src="img/common/logo-home.png"
+          alt="logotipo de la pagina web"
+        />
+      </figure>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li>Registro</li>
+          <li><a href="login.html">login</a></li>
+          <li><a href="contacto.html">contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Registrate</h1>
+      <p>Para poder acceder a nuestra academia necesitamos que te registres.</p>
+      <form
+        action="/registro-Academia/"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <fieldset>
+          <legend>Datos para registro al curso</legend>
+          <label for="Nombre">Nombre Completo:</label>
+          <input type="text" name="Nombre" id="Nombre" required /><br /><br />
+
+          <label for="fecha de nacimiento">Fecha de Nacimiento:</label>
+          <input
+            type="date"
+            name="fecha de nacimiento"
+            id="fecha de nacimiento"
+          /><br /><br />
+
+          <label for="correo">Email:</label>
+          <input type="email" name="correo" id="correo" required /> <br /><br />
+
+          <label for="direccion">Direccion</label>
+          <input type="text" name="direccion" id="direccion" /><br /><br />
+
+          <label for="enlace">Pagina Web</label>
+          <input type="url" name="enlace" id="enlace" /><br /><br />
+
+          <label for="foto">Foto</label>
+          <input type="file" name="foto" id="foto" /><br /><br />
+
+          <label for="Biografia">Biografia:</label><br />
+          <textarea
+            name="Biografia"
+            id="Biografia"
+            cols="30"
+            rows="10"
+          ></textarea
+          ><br />
+          <button type="submit" class="Enviar">Enviar</button>
+          <button type="reset" class="Borrar">Borra registro</button>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 - <a href="AvisoLegal.html">Aviso legal</a></p>
+    </footer>
+  </body>
+</html>
